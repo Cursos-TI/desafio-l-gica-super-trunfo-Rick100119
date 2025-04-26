@@ -119,65 +119,12 @@ int main() {
     
     // Comparação de Cartas:
     // utilizando os padroes if e else
+    printf ( " Requisito Usado: Populaçao\n");
     if (Pop > Pop2){
-    printf("População 1 Vencedor\n");
+    printf("Carta 1 Vencedor\n");
     } else {
-     printf("População 2 Vencedor\n");
+     printf("Carta 2 Vencedor\n");
     }
-    if (area > area2){
-        printf("Área 1 Vencedor\n");
-        } else {
-         printf("Área 2 Vencedor\n");
-        }
-        if (pib > pib2){
-            printf("Pib per capta 1 Vencedor");
-            } else {
-             printf("Pib per capta 2 Vencedor\n");
-            }
-            if (PIB > PIB2){
-                printf("PIB 1 Vencedor\n");
-                } else {
-                 printf("PIB 2 Vencedor\n");
-                }
-                if (N > N2){
-                    printf("Pontos turísticos 1 Vencedor\n");
-                    } else {
-                     printf("Pontos turísticos 2 Vencedor\n");
-                    }
-                    if (densidade > densidade2){
-                        printf("Densidade 2 Vencedor\n");
-                        } else {
-                         printf("Densidade 1 Vencedor\n");
-                        }  
-                        if (supera > superb){
-                            printf("Super Poder 1 Vencedor\n");
-                            } else {
-                             printf("Super Poder 2 Vencedor\n");
-                             printf ( " Todos os atributos acima\n");
-                            }
+    
                             
 return 0;
-
-        /* code */
-    
-  
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    /* code */
-}
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-
