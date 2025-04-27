@@ -9,8 +9,8 @@ printf(" Defina as numeração das Cartas, Boa sorte.\n");
        // Definição das variáveis para armazenar as propriedades das cidades
     // Primeira Carta
     printf ("Carta 1 :\n");
-
-    char Estado ="A"  ;
+int resultado;
+    char Estado[10]="A"; 
     char cg [10]="A01";
     char  Cidade [40]=" São Paulo";
     unsigned int Pop =12325000;
@@ -36,10 +36,10 @@ printf(" Defina as numeração das Cartas, Boa sorte.\n");
 printf (" Escolha o primeiro atributo\n");
 printf ("1- População\n");
 printf (" 2-Área\n");
-Printf ("3- PIB\n");
+printf ("3- PIB\n");
 printf ("4- Pib per capta\n");
 printf ("5-Pontos turisticos\n");
-Printf ("6- Densidade\n");
+printf ("6- Densidade\n");
  scanf("%u", &atributo ); 
 
 // aplicando o swict
@@ -71,10 +71,10 @@ break;
 printf (" Escolha o segundo atributo\n");
 printf ("1- População\n");
 printf (" 2-Área\n");
-Printf ("3- PIB\n");
+printf ("3- PIB\n");
 printf ("4- Pib per capta\n");
 printf ("5-Pontos turisticos\n");
-Printf ("6- Densidade\n");
+printf ("6- Densidade\n");
  scanf("%u", &atributo2 );
  switch (atributo2)
 {
@@ -106,3 +106,5 @@ if (atributo == atributo2) {
   } else {
     printf("esta dando certo.");
   }
+  return 0;
+}
