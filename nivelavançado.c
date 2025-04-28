@@ -22,12 +22,12 @@ printf(" Defina as numeração das Cartas, Boa sorte.\n");
     // Segunda Carta
 
     char Estado2[10]="B" ;
-    char cg2 [10] = "B02";
+    char cg2 [10] = "B02",atributo, atributo2;
     char  Cidade2 [40]="Rio De Janeiro";
-    unsigned int Pop2 =  6748000, atributo, atributo2;
+    unsigned int Pop2 =  6748000;
     float area2= 1200.25;
     float PIB2 =300.50;
-    int N2= 30, numeropc, numeropc2 ;
+    int N2= 30, resultado, resultado2;
      // CAlculo densidade/ pib per capta + super poder 2 carta
      float densidade2 = Pop2/ area2;
      float pib2 = PIB2 / Pop2;
@@ -46,21 +46,27 @@ switch (atributo)
 {
 case 1 :
 printf ("População: %u\n", Pop);
+resultado = Pop > Pop2 ? 1 : 0;
 break;  
 case 2:
 printf ("Área :%f\n", area);
+resultado = area > area2 ? 1:0;
 break;
 case 3:
 printf ("PIB : %f\n", PIB);
+resultado = PIB > PIB2 ? 1 : 0;
 break;
 case 4:
 printf ("Pib per capta: %f\n", pib);
+resultado = pib > pib2 ? 1:0;
 break;  
 case 5:
 printf ("Pontos turisticos: %d\n", N);
+resultado = N > N2? 1 : 0;
 break;
 case 6:
 printf ("DENSIDADE :%f\n",densidade);
+resultado = densidade < densidade2 ? 1:0;
 break;
 
 default :
@@ -77,36 +83,45 @@ printf ("6- Densidade\n");
  scanf("%u", &atributo2);
  switch (atributo2)
  {
-  case 1:
+  case 1 :
   printf ("População: %u\n", Pop);
-  break;
+  resultado2 = Pop > Pop2 ? 1 : 0;
+  break;  
   case 2:
   printf ("Área :%f\n", area);
-  break ;
+  resultado2 = area > area2 ? 1:0;
+  break;
   case 3:
   printf ("PIB : %f\n", PIB);
-  break ;
+  resultado2 = PIB > PIB2 ? 1 : 0;
+  break;
   case 4:
   printf ("Pib per capta: %f\n", pib);
-  break ;  
+  resultado2 = pib > pib2 ? 1:0;
+  break;  
   case 5:
   printf ("Pontos turisticos: %d\n", N);
-  break ;
+  resultado2 = N > N2? 1 : 0;
+  break;
   case 6:
   printf ("DENSIDADE :%f\n",densidade);
-  break ;
-  default:
-  printf("Opção inválida ");
+  resultado2 = densidade < densidade2 ? 1:0;
   break;
 }
 // implementando o e se
 if (atributo == atributo2) {
   printf("Não pode escolher a mesma opção.");
-  } else
+  } else if (resultado==1, resultado2==1)
   {
-    printf("resultado : ");
+    printf("Parabéns, Voçê Vençeu ");
+  }  else if (resultado != resultado2)
+  {
+    printf("EMPATE");
+  }else
+  
+  {
+    printf("GAME OVER");
   }
   
-
   return 0;
 }
